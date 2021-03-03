@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class ISweepstakesManager
+    interface ISweepstakesManager
     {
-        public void InsertSweepstakes(Sweepstakes sweepstakes)
-        {
+        void InsertSweepstakes(Sweepstakes sweepstakes);
 
-        }
-        Sweepstakes GetSweepstakes()
-        {
-
-        }
+        Sweepstakes GetSweepstakes();
+        
     }
 }

@@ -8,9 +8,11 @@ namespace Sweepstakes
 {
     class UserInterface
     {
+        string prompt;
+
         static string GetUserInputFor(string prompt)
         {
-
+            
         }
     }
 }

@@ -9,13 +9,16 @@ namespace Sweepstakes
     class Sweepstakes
     {
         Dictionary<int, Contestant> contestants;
-        string name;
-        string Name;
+        private string name;
+        public string Name { get => name; set => name = value; }
 
-        Sweepstakes(string name);
+        public Sweepstakes(string name)
+        {
+            contestants = new Dictionary<int, Contestant>();
+        }
         public void RegisterContestant(Contestant contestant)
         {
-
+            contestants.Add(contestants.Count, contestant);
         }
         Contestant PickWinner()
         {
@@ -23,7 +26,7 @@ namespace Sweepstakes
         }
         public void PrintContestantInfo(Contestant contestant)
         {
-
+            
         }
 
     }
