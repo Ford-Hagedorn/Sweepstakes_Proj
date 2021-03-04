@@ -6,19 +6,21 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class UserInterface
+    public static class UserInterface
     {
-        public Contestant contestant;
         
-        string prompt;
-
-        public static string GetUserInputForContestant()
+        public static string GetContestantName()
         {
-            contestant = 
-            Console.WriteLine("Please enter your information to have a chance at the sweepstakes!");
-            
+
+            Console.WriteLine($"Welcome! Please enter your name!");
+            string userInputName = Console.ReadLine();
+            return userInputName;
+
+
+
 
         }
+
         
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class Sweepstakes
+    public class Sweepstakes
     {
         Dictionary<int, Contestant> contestants;
         private string name;
@@ -23,13 +23,14 @@ namespace Sweepstakes
         }
         public Contestant PickWinner()
         {
-            //Choose a random contestant as the big winner
-            Contestant contestant = new Contestant();
+            
             random = new Random();
             int randomNumber = random.Next(0, contestants.Count);
+            
             Console.WriteLine($"Congratulations {randomNumber}! You won!" +
                 $"Your prize is a brand new Vespa with a Roll Cage!" +
                 $"Enjoy!");
+            
         }
         public void PrintContestantInfo(Contestant contestant)
         {

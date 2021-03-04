@@ -13,20 +13,15 @@ namespace Sweepstakes
         public string LastName;
         public string EmailAddress;
         public int RegistrationNumber;
-        public void CreateContestant()
+        public Contestant(string FirstName, string LastName, string EmailAddress, int randomUpperLimit)
         {
-            FirstName = Console.ReadLine();
-            LastName = Console.ReadLine();
-            EmailAddress = Console.ReadLine();
-            GenerateRegistrationNumber();
-            RegistrationNumber = Console.WriteLine($"Your registration number is {newRegNumber}");
+            this.FirstName = FirstName;
+            this.LastName = LastName;
+            this.EmailAddress = EmailAddress;
+            RegistrationNumber = random.Next(0, randomUpperLimit);
+        
 
         }
-        public void GenerateRegistrationNumber()
-        {
-            random = new Random();
-            int newRegNumber = random.Next(0, newRegNumber);
-            
-        }
+        
     }
 }

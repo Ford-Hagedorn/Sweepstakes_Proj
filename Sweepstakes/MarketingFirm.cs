@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class MarketingFirm
+    public class MarketingFirm
     {
         ISweepstakesManager manager;
         
@@ -35,12 +35,7 @@ namespace Sweepstakes
         public void CreateSweepstakes()
         {
             Sweepstakes sweepstakes = new Sweepstakes("Sweepstakes");
-            Console.WriteLine("Welcome to our sweepstakes! It's completely free to enter!" +
-                "All you have to do is give us your name (first and last), and a valid email address" +
-                "and we will send you a registration number! Once you have that number, that's it!" +
-                "You're entered into the contest! The grand prize for this sweepstakes?" +
-                "A brand new Vespa, custom fitted with a sweet Roll Cage! It's a one-of-a-kind prize," +
-                "so enter soon and maybe you'll be the lucky winner!");
+            
 
         }
     }
