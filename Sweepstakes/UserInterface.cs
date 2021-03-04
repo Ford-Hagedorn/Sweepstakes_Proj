@@ -10,9 +10,10 @@ namespace Sweepstakes
     {
         string prompt;
 
-        static string GetUserInputFor(string prompt)
+        static string GetUserInputForContestant(string prompt)
         {
-            
+            prompt = Console.WriteLine("Please enter your information to have a chance at the sweepstakes!");
+
         }
     }
 }

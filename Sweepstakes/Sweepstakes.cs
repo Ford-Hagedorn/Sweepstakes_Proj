@@ -22,7 +22,7 @@ namespace Sweepstakes
         }
         Contestant PickWinner()
         {
-
+                                 
         }
         public void PrintContestantInfo(Contestant contestant)
         {
