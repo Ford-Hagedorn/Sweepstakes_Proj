@@ -23,16 +23,20 @@ namespace Sweepstakes
         }
         public Contestant PickWinner()
         {
-            //Choose a random contestant as the big winner  
+            //Choose a random contestant as the big winner
+            Contestant contestant = new Contestant();
             random = new Random();
-            int randomNumber = random.Next(0, contestants.registrationNumber.Count);
+            int randomNumber = random.Next(0, contestants.Count);
             Console.WriteLine($"Congratulations {randomNumber}! You won!" +
                 $"Your prize is a brand new Vespa with a Roll Cage!" +
                 $"Enjoy!");
         }
         public void PrintContestantInfo(Contestant contestant)
         {
-            
+            contestant = PickWinner();
+            Console.WriteLine($"The sweepstakes is over. A huge congratulations to" +
+                $"{contestant.FirstName}{contestant.LastName}! We want to thank everyone" +
+                $"who participated and wish everyone good luck in the next sweepstakes!");
         }
 
     }
